@@ -1,0 +1,76 @@
+.Headers_page{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-between;
+    align-items: center;
+    border: 2px solid rgb(226, 240, 247);
+    box-shadow: 0px 20px 20px rgb(92, 107, 107);
+
+}
+.logo{
+    border: 1px solid gray;
+}
+.navHeading{
+    color: rgb(0, 34, 255);
+    margin-left: 20px;
+}
+.NavTabs_card{
+    display: flex;
+    margin-right: 20%;
+    /* justify-content: center; */
+}
+.navLink{
+    text-decoration: none;
+}
+.nav_tab{
+    margin-right: 33px;
+    list-style: none;
+    font-size: 15px;
+    color: #000000;
+    opacity: 1;
+    font-weight: 500;
+    /* width: 44px; */
+}
+.hamburgerMenu{
+    display: none;
+}
+.closeMenu{
+    display: none;
+}
+.mobileNavLink{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+}
+.Mnav{
+    margin-right: 24px;
+}
+@media (max-width:468px){
+    .Headers_page{
+        flex-direction:row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .NavTabs_card{
+        margin-right: 10px;
+        /* width: 70%; */
+        /* align-self: flex-end; */
+    }
+
+    .hamburgerMenu{
+        display: inline-block;
+        font-size: 2.2rem;
+        color: rgb(101, 17, 245);
+        /* align-items: flex-end; */
+    }
+    .closeMenu{
+        display: inline-block;
+        font-size: 2.2rem;
+        color: rgb(101, 17, 245);
+    }
+.nav_tab{
+    display: none;
+}
+}
